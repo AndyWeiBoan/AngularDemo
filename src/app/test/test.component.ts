@@ -1,6 +1,5 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Http, Response } from '@angular/http';
 
 @Component({
   selector: 'app-test',
@@ -10,7 +9,7 @@ import { Http, Response } from '@angular/http';
 export class TestComponent implements OnInit {
   data: any;
   
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     
   }
   
