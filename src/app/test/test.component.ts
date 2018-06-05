@@ -17,7 +17,7 @@ export class TestComponent implements OnInit {
   }
   
   GetData(){
-    this.http.get('api/Values/get')
+    this.http.get('api/Values/getCompression')
     .subscribe(result=>{
       this.data=result
     });
