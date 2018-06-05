@@ -1,3 +1,9 @@
-<p>
+<p [style.font-size]="(12 + Count) + 'px'" [style.color]="'red'">
   message works!
 </p>
+
+<button (click)="CountPlus()">字體變大</button>
+<p>
+   
+</p>
+<button (click)="CountMinus()">字體變小</button>

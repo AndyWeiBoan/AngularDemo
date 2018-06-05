@@ -6,10 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./message.component.css']
 })
 export class MessageComponent implements OnInit {
-
+  Count = 0;
   constructor() { }
 
   ngOnInit() {
   }
 
+  // ngstyle練習
+  GetStyle() {
+    return { 'font-size': (12 + this.Count) + 'px' };
+  }
+
+  CountPlus() {
+    this.Count++;
+  }
+
+  CountMinus(){
+    this.Count--;
+  }
 }
